@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"  />
+<link rel="icon" 
+type="image/jpg" 
+href="pics/logo.jpg">
+<style>
+  body {
+  background-color: #1fa9e9
+  }
+  </style>
+</head>
+<body>
+
+
+    <link rel="icon" 
+    type="image/jpg" 
+    href="pics/logo.jpg">
+
+<title>The CartmanSite</title>
+
+
+      <div class="topnav">
+        <a href="#about">About Cartman</a>
+        <a href="#photos">Cartman's phothos</a>
+        <a href="#playlist">Cartman's Best</a>
+        <a href="#like">Like</a>
+        <a href="#qrcoder">QR code</a>
+        <a href="#qa">Q&A</a>
+        <a href="#contact">Contact me</a>
+      </div>
+  
+  
+		  
+<section id="about" class="section">
+    <br/>
+    <br/>
+    <center><h1 style="font-size:40px;">About Eric Cartman</h1></center>
+    <center><img src="pics/about.jpg" height="200" width="350"></center>
+    <br/>
+    <br/>
+    <p>
+    Eric Cartman is a main character in the animated television series "South Park".<br/>
+    Cartman is an elementary school student who lives with his mother in the fictional town of South Park, Colorado, where he routinely has extraordinary experiences atypical of a small town.
+    Cartman has been portrayed as aggressive, prejudiced, arrogant and narcissistic.
+    </p>
+    <br/>
+
+</section>
+
+<section id="photos" class="section">
+  <br/>
+  <center><h1 style="font-size:40px;">Photos</h1></center>
+  <!-- Slideshow container -->
+<center>
+      <div class="w3-content w3-display-container">
+          <img class="mySlides" src="pics/1.jpg" height="200" width="350">
+          <img class="mySlides" src="pics/2.jpg" height="200" width="350">
+          <img class="mySlides" src="pics/3.jpg" height="200" width="350">
+          <img class="mySlides" src="pics/4.jpg" height="200" width="350">
+      </br>
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </center>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+  
+  </section>
+
+<section id="playlist" class="section">
+    <center><h1 style="font-size:40px;">Best Moments</h1></center>
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fLsvvF9HjqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</section>
+
+<section id="like" class="section">
+<center><h1 style="font-size:40px;">Give us Like!</h1></center>
+<center>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fbenmoa.github.io%2FCartmanSite%2F&width=63&layout=box_count&action=like&size=large&show_faces=true&share=false&height=65&appId=353403865516349" width="63" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</center>
+
+
+<section id="qrcoder" class="section">
+    <center><h1 style="font-size:40px;">QR Code</h1></center>
+<br/>
+<center><img src="pics/qr.png" height="200" width="200"></center>
+<br/>
+</section>
+
+
+<section id="qa" class="section">
+
+
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+    <center><h1 style="font-size:40px;">Contact us!</h1></center>
+  <br/>
+  <center>
+  <form action="mailto:benmoa@post.bgu.ac.il" method="post" enctype="text/plain">
+  Name:<br>
+  <input type="text" name="name"><br>
+  E-mail:<br>
+  <input type="text" name="mail"><br>
+  Comment:<br>
+  <input type="text" name="comment" size="50"><br><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+  </form>
+</center>
+      <br/>
+      <br/>
+  </section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
