@@ -42,4 +42,12 @@
 	font-size: 100%;
 	text-shadow: 0 0 6px #000000;
 	text-align: center;
-  }
+	}
+	
+	h1 {
+		background-color: rgba(243, 236, 224, 0.295);
+	}
+	h4 {
+		color: black;
+		font-family: Arial, Helvetica, sans-serif
+	}
